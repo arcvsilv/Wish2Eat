@@ -1,0 +1,17 @@
+.ListLink a{
+    text-decoration: none;
+}
+
+
+@media only screen and (max-device-width: 400px) {  
+    .ListLink{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {    
+    .ListLink{
+        width: 100%;
+    }
+}    
+

@@ -1,0 +1,112 @@
+
+#makeStyles-content{
+    padding-left: 100px !important;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.grid-container {
+  display  : flex;
+  justify-content: space-between;  
+  box-shadow: 2px 3px 8px 3px rgb(126, 126, 126);
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+
+.grid-menu{
+    display: grid;
+    grid-gap: 5px;        
+    box-shadow:inset 0 0 5px grey; 
+    border-radius: 2px;
+    padding: 3px;
+}
+.menu-client{
+  height: 200px;
+}
+
+.grid-scroll{
+  height: auto;
+  width: 50%;
+  margin: 2vh;
+}
+
+.grid-product{
+  height: auto;
+  width: 50%;  
+}
+
+.product-select{
+  margin: 5px 0 0 10px;
+}
+
+.scrollbar{
+  height: 40vh;
+  overflow-y: scroll;
+}
+
+/* width */
+.scrollbar::-webkit-scrollbar {
+    width: 20px;
+}
+  
+  /* Track */
+  .scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 6px;
+  }
+   
+  /* Handle */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color); 
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+.list-group-item.active{
+    background-color:var(--color-light)!important;    
+}  
+.list-group-item.active .MuiListItemText-primary{
+    color: #fff;
+    font-weight :bold!important;    
+}
+
+.new-product{
+  display :flex;
+  width: 20%;
+  margin: 5px;
+}
+
+.divUpdateA{
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+   height: 3em;
+}
+
+.button-newproduct{
+  background: var(--color-light)!important;
+  color: white!important;
+  font-size: 17px!important;
+  border-radius: var(--radius);
+  font-weight: bold;    
+}
+
+.buttonUpdate{
+  border: 2px black;
+}
+
+.buttons-update-Delete{
+  display: flex;
+  /* justify-content: space-around;     */
+}
+
+.buttons{
+  display: flex;
+  margin-right: 3vw;
+}

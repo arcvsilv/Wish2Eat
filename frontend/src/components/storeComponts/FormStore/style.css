@@ -1,0 +1,79 @@
+#input{
+    margin-right: 2vh;    
+}
+
+.input-name{
+    width: 70%;    
+}
+.input-tipo{
+    width: 30%;
+}
+.input-end{
+    width: 80%;
+}
+.input-cep{
+    width: 20%;
+}
+.input-num{
+    width: 20%; 
+}
+.input-cidade {
+    width: 26%;
+}
+.input-uf {
+    width: 26%;   
+    margin: 1vh; 
+}
+.input-bairro {
+    width: 26%;
+}
+.input-tel {
+    width: 26%;    
+}
+.input-facebook{
+    width: 36%;
+}
+.input-instagram{
+    width: 36%;
+}
+
+.input-login {
+    width: 26%;    
+}
+
+.Form-Type{
+    width: 50%;
+}
+
+.Form-Register{
+    width: 100%;
+} 
+
+.buttonsubmit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;    
+    margin-top: 5vh;
+}
+
+#form-select{
+    width: 95%;
+}
+.MuiFormLabel-root{
+    color : black!important; 
+    font-family: var(--font) ;
+    font-size: var(--font-size);
+}
+.label{
+    color : black;
+}
+
+
+.row{
+    margin-left: 2vh!important;
+    margin-right: 2vh!important;
+}

@@ -1,0 +1,149 @@
+.fundoStore{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    position: relative;
+    height: 100vh;    
+    /* background: url('../core/assests/img/fundo.jpg') no-repeat 100%; */
+    /* background-color: var(--color-light);
+    background-size: cover; */
+
+}
+/* body::after {
+    content: "";
+    background:url('../core/assests/img/fundo2.jpg') no-repeat ;
+    background-size: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+} */
+
+.linha{
+    margin: 5% 5% 5% 20%;
+    height: 80vh;
+    width: 60%;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    /* box-shadow: 1px 1px 5px 1px #494848; */
+}
+
+.left{
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--color);
+    /* background-image: url('../core/assests/img/pizza.jpg'); */
+}
+
+.right{
+    width: 60%;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1vh;
+}
+
+.right2{
+    width: 60%;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(221, 221, 221);
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.divlogo{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.titlewhite{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login{
+    justify-items: center;
+    margin-top: 20%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.name{
+    width: 70%;    
+}
+.type{
+    width: 30%;
+    margin-left: 1vh;
+}
+.address{
+    width: 80%;
+}
+.cep{
+    width: 60%;
+    margin-left: 1vh;
+}
+.number{
+    width: 20%;
+    margin-left: 1vh;
+}
+.city {
+    width: 50%;
+    margin-left: 1vh;    
+}
+.uf {
+    width: 40%;       
+}
+.district {
+    width: 50%;
+}
+.input-tel {
+    width: 100%;    
+}
+.input-facebook{
+    width: 100%;
+}
+.input-instagram{
+    width: 100%;
+}
+
+.formbutton{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    border-spacing: 1px;
+}
+
+.gologin{
+    display: flex;
+    justify-content: center;
+    /* height: 6vh; */
+    margin-top: 4vh;
+}
+.buttonregister{
+    width: 60%;
+}
+
+.buttonlogin{
+    background-color: var(--color-light);
+    border-radius: 10px;
+    color: white;
+    border:1px solid white;
+}
+
+.buttonBack{
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+}
+.meio{
+    margin-left: 100%;
+}
