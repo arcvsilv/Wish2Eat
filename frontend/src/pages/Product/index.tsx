@@ -167,11 +167,11 @@ console.log("tosqui")
                     <form onSubmit={onSubmit}>
                         <div className="title">  {getTitle()} </div>
                         <div className="center">
-                            <Input id="name" label="Nome" //required="required" 
+                            <Input id="name" label="Nome" 
                                 placeholder="X-Tudo"
                                 value={name} onChange={e => setName(e.target.value)}
                             />
-                            <Input id="price" label="Preço" //required="required" 
+                            <Input id="price" label="Preço" 
                                 placeholder="R$1.00"
                                 value={value}
                                 onChange={e => setValue(e.target.value)}
@@ -185,11 +185,9 @@ console.log("tosqui")
                                 />
                             </Form.Group>
                         </div>
-                        {/* <Link to={GetLink()}>  */}
                         <button type="submit">
                             {getButtonText()}
-                        </button>
-                        {/* </Link> */}
+                        </button> 
                     </form>
                 </div>
             </div>
