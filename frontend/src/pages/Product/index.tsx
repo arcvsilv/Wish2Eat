@@ -170,7 +170,7 @@ console.log("tosqui")
                             <Input id="name" label="Nome" 
                                 placeholder="X-Tudo"
                                 value={name} onChange={e => setName(e.target.value)}
-                            />
+                            /> 
                             <Input id="price" label="Preço"  
                                 placeholder="R$1.00"
                                 value={value}
