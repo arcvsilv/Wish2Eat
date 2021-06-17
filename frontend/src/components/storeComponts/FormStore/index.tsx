@@ -60,8 +60,7 @@ const FormStore = () => {
     const handleCloseError = () => setShowError(false);
     const history = useHistory();
     const handleShow = () => {
-        setShowCreate(true);
-        // history.push(`/store/${id}/product`)
+        setShowCreate(true)
     }
     function handleShowError() {
         setShowError(true);
@@ -92,7 +91,6 @@ const FormStore = () => {
                 setPhoneNumber(response.data.phoneNumber)
                 setEmail(response.data.email)
                 setPassword(response.data.password)
-                // setConfirmPassword(response.data.password)
                 GetAddress(response.data.cep)
                 setLoading(false);
             });
@@ -100,44 +98,6 @@ const FormStore = () => {
     useEffect(() => {
         refresh();
     }, []);
-
-    function Validation() {
-        let aux = false;
-        if (!name) {
-            setMessageError("Informe o nome do Estabelecimento");
-            aux = false;
-        } else if (!type) {
-            setMessageError("Informe o tipo do Estabelecimento");
-            aux = false;
-        } else if (!cep) {
-            setMessageError("Informe o CEP do Estabelecimento");
-            aux = false;
-        } else if (!number) {
-            setMessageError("Informe o número do Estabelecimento");
-            aux = false;
-        } else if (!phoneNumber) {
-            setMessageError("Informe o Telefone do Estabelecimento");
-            aux = false;
-        } else if (!instagram) {
-            setMessageError("Informe o Instagram do Estabelecimento");
-            aux = false;
-        } else if (!facebook) {
-            setMessageError("Informe o Facebook do Estabelecimento");
-            aux = false;
-        } else if (!password) {
-            setMessageError("Preencha todos os dados!");
-            aux = false;
-        } else if (!confirmPassword) {
-            setMessageError("Preencha todos os dados!");
-            aux = false;
-        } else if (password != confirmPassword) {
-            setMessageError("Senha não confere!");
-            aux = false;
-        } else {
-            aux = true;
-        }
-        return aux;
-    }
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -260,8 +220,7 @@ const FormStore = () => {
                                                 value={name} onChange={(e) => setName(e.target.value)}
                                             />
                                         </div>
-                                        <FormControl className={classes.formControl} //
-                                        >
+                                        <FormControl className={classes.formControl} >
                                             <InputLabel shrink htmlFor="age-native-label-placeholder">
                                                 Tipo
                                             </InputLabel>
@@ -271,8 +230,7 @@ const FormStore = () => {
                                                     name: 'type',
                                                     id: 'age-native-label-placeholder',
                                                 }}
-                                                onChange={event => handleChange}
-                                            // setType(event.target.value)}
+                                                onChange={event => handleChange}                                            
                                             >
                                                 <option aria-label="None" value="" />
                                                 <option value="1">Ice Cream</option>
@@ -312,13 +270,10 @@ const FormStore = () => {
                                             />
                                         </div>
                                         <div className="input-uf" >
-                                            <FormControl className={classes.formControl} id="form-select">
-                                                {/* <InputLabel htmlFor="grouped-native-select" className="label">
-                                            Estado
-                                        </InputLabel> */}
+                                            <FormControl className={classes.formControl} id="form-select">                                        
                                                 <Select native id="grouped-native-select"
                                                     value={uf}
-                                                //onChange={e => setUf(e.target.value)}
+                                                    //onChange={e => setUf(e.target.value)}
                                                 >
                                                     <option aria-label="None" value="" />
                                                     <option value="AC">Acre</option>

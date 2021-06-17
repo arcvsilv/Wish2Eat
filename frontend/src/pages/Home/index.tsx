@@ -1,20 +1,11 @@
 import React from 'react'
 import NavBar from '../../components/Header';
 import { ReactComponent as Logo } from '../../core/assests/ico/logo.svg'
-import {GlobalContext} from '../../components/Context'
 import './style.css'
 
-
 const Home = () => {
-
-    const global = React.useContext(GlobalContext);
-    
-    function handleClick(){
-        global.setStoreLogada(false);
-    }
-
+  
     return (
-        // <p>Home</p>
         <div className="parent">
             < NavBar />
             <div className="conteudo">

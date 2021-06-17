@@ -24,7 +24,6 @@ const NavItems = ({ logado }) => {
         id: string;
     }
     const { id } = useParams<StoreParams>();
-    const [store, setStore] = useState("");
     const history = useHistory();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const global = React.useContext(GlobalContext);
@@ -50,27 +49,11 @@ const NavItems = ({ logado }) => {
                 setAnchorEl(null);
             })
     };
-
-    useEffect(() => {
-
-        // api.get(`store/${id}`)
-        //     .then((response) =>
-        //         setStore(response.data.name)
-        //     )
-    }, []);
-
-    // console.log(global.storeLogada);
-
+    
     if ( (global.storeLogada != undefined) && (global.storeLogada != null)) {
         return (
             <>
                 <ul className="navbar-nav ml-auto ">
-                    <Link className="link" to="/" >
-                        <ListItem button key='Home' >
-                            <ListItemIcon> <HomeRoundedIcon className="icon" />  </ListItemIcon>
-                            <ListItemText primary='Home' />
-                        </ ListItem>
-                    </Link>
                     <Link className="link" to={{ pathname: `/store/${id}/product` }}>
                         <ListItem button key='Cardápio'>
                             <ListItemIcon> <MenuBookRoundedIcon className="icon" />  </ListItemIcon>

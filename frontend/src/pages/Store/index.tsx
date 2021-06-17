@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link, useHistory } from 'react-router-dom'
 import axios from 'axios'
 import api from '../../services/api'
-import MyModal from '../../components/Modal'
 import Input from '../../components/Input'
 import NavBar from '../../components/Header'
 import { makeStyles } from '@material-ui/core/styles'
@@ -111,12 +110,7 @@ const FormStore = () => {
                 .catch((error) => {
                     alert('Informe um CEP válido!')
                 });
-        } else {
-            // setAddress([])
-            // setCity("")
-            // setUf('')
-            // setDistrict('')
-        }
+        }         
     }
 
     const onSubmit = (e) => {
@@ -238,12 +232,8 @@ const FormStore = () => {
                                         value={name} onChange={(e) => setName(e.target.value)}
                                     />
                                 </div>
-                                <div className="type">
-                                    {/* <Input type="text" label="Tipo" id="tipo"
-                                        value={type} onChange={(e) => setType(e.target.value)}
-                                    /> */}
-                                    <FormControl className={classes.formControl} //
-                                    >
+                                <div className="type">                                    
+                                    <FormControl className={classes.formControl} >
                                         <InputLabel shrink htmlFor="age-native-label-placeholder">
                                             Tipo
                                         </InputLabel>
@@ -254,7 +244,7 @@ const FormStore = () => {
                                                 id: 'age-native-label-placeholder',
                                             }}
                                             onChange={event => handleChange}
-                                        // setType(event.target.value)}
+                                            // setType(event.target.value)}
                                         >
                                             <option aria-label="None" value="" />
                                             <option value="1">Ice Cream</option>
@@ -371,7 +361,6 @@ const FormStore = () => {
                                 <button
                                     type="submit"
                                     className="buttonregister"
-                                // href="/Sigin"
                                 >
                                     Cadastrar
                                 </button>

@@ -10,20 +10,9 @@ import api from '../../services/api';
 import Modal from 'react-bootstrap/Modal'
 import './style.css';
 
-// const useAdminStyles = makeStyles({
-//     container: {
-//         '& > *': {
-//             borderBottom: 'unset',
-//             display: 'flex',
-//             justifyContent: 'spaceBetween',
-//             height: '90%',
-//         },
-//     },
-// });
-
 const useStyles = makeStyles((props) => ({
     admin: {
-        margin: '2vh 2vh 2vh 2vh',//props.spacing(1),
+        margin: '2vh 2vh 2vh 2vh',
         borderBottom: 'unset',
         display: 'flex',
         justifyContent: 'space-between',
@@ -31,7 +20,7 @@ const useStyles = makeStyles((props) => ({
         boxShadow: '2px 3px 8px 3px rgb(126, 126, 126)'
     },
     client: {
-        margin: '2vh 2vh 2vh 2vh',//props.spacing(1),
+        margin: '2vh 2vh 2vh 2vh',
         borderBottom: 'unset',
         display: 'flex',
         justifyContent: 'space-between',
@@ -97,15 +86,15 @@ const Menu = (props: { admin: Boolean }) => {
         console.log('e' + id)
         api.delete(`product/${id}`)
             .then(response => {
-                refreshList();
                 setShowCreate(true);
+                refreshList();                
             })
     }
 
     return (
         <>
             <div className={
-                admin ? (classes.admin) : (classes.client)//("grid-container")
+                admin ? (classes.admin) : (classes.client)
             } >
                 <Modal show={showCreate} onHide={handleCloseCreate} animation={false}>
                     <Modal.Header closeButton>
@@ -194,9 +183,7 @@ const Menu = (props: { admin: Boolean }) => {
                         <Link
                             to={{ pathname: `/store/${id}/product/insert` }}
                         >
-                            <button type="button" className="button-newproduct"
-                            // ico={<AddCircleIcon />} 
-                            >
+                            <button type="button" className="button-newproduct">
                                 Novo Produto
                             </button>
                         </Link>
@@ -209,4 +196,3 @@ const Menu = (props: { admin: Boolean }) => {
 }
 
 export default Menu;
-

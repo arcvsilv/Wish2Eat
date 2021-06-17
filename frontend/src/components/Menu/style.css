@@ -80,6 +80,7 @@
   display :flex;
   width: 20%;
   margin: 5px;
+  flex-direction: row;
 }
 
 .divUpdateA{
@@ -95,6 +96,8 @@
   font-size: 17px!important;
   border-radius: var(--radius);
   font-weight: bold;    
+  height: 50px;
+  margin-right: 10px;
 }
 
 .buttonUpdate{

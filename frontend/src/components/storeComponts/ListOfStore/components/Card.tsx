@@ -1,7 +1,6 @@
 import React from 'react';
 import RestaurantRoundedIcon from '@material-ui/icons/RestaurantRounded'
 import { Typography } from '@material-ui/core'
-// import '../../../../css/GlobalCssComponents.css'
 import './style.css'
 
 export default function Card(prop: {id: any; name:string}){

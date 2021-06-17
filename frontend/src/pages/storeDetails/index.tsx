@@ -25,12 +25,10 @@ const StoreDetails = () => {
     const [number, setNumber] = useState();
     const [instagram, setInstagram] = useState();
     const [facebook, setFacebook] = useState();
-
-    useEffect(() => {
-        
+ 
+    useEffect(() => {        
         api.get(`store/${id}`)
             .then(response => {
-                // console.log(response.data);
                 setStore(response.data)
                 setName(response.data.name)
                 setCep(response.data.cep)

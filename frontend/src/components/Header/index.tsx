@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ReactComponent as Logo } from '../../core/assests/ico/Wish2eat.svg'
 import { useParams } from 'react-router-dom';
 import NavItems from './navitems';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import api from '../../services/api';
 import { GlobalContext } from '../Context';
 import './style.css'
 
@@ -15,17 +14,10 @@ const NavBar = () => {
     const [store, setStore] = useState("");
     const global = React.useContext(GlobalContext);
 
-    useEffect(() => {
-        // api.get(`store/${id}`)
-        //     .then((response) =>
-        //         setStore(response.data.name)
-        //     );
-    }, [])
-
     return (
         <div className="headernavbar">
             <nav className="navbar navbar-fixed-top navbar-expand-lg navbar-dark">
-                <div className="navbar-brand" //href="#"
+                <div className="navbar-brand" 
                 >
                     <Logo className="logo-svg" />
                 </div>

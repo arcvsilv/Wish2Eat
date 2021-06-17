@@ -1,9 +1,4 @@
-import React, { useState } from 'react';
-// import styled from 'styled-components';
-// import { InputGroup, FormControl, Button, Form, Col } from 'react-bootstrap';
-// import { useHistory } from 'react-router';
-//import { faSearch } from '@fortawesome/free-solid-svg-icons';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 
 const SearchBar = ({ searchQuery, setSearchQuery }) => {
     type HTMLElementEvent<T extends HTMLElement> = Event & {
