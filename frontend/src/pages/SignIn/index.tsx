@@ -4,12 +4,8 @@ import { ReactComponent as Logo } from '../../core/assests/ico/logo.svg'
 import { Link } from 'react-router-dom'
 import PersonIcon from '@material-ui/icons/Person'
 import LockIcon from '@material-ui/icons/Lock'
-import Load from '../../components/Load'
 import api from "../../services/api"
-import AuthContext from '../../components/Context/auth';
 import { GlobalContext } from '../../components/Context';
-
-import useAuth from '../../hooks/useAuth';
 import './style.css'
 
 const Login = () => {
@@ -18,26 +14,6 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const history = useHistory();
     const global = React.useContext(GlobalContext);
-    const context = React.useContext(AuthContext);
-
-    // const { signed, signIn, loading } = useAuth();
-
-    // const handleSignInTeste = React.useCallback(() => {
-    //     signIn();
-    // }, [signIn]);
-
-    function handleLogin() {
-        // context.Login();
-    }
-
-    // if (loading) {
-    //     return (
-    //         <div className='loading'>
-    //             <h1>SignIn Page</h1>
-    //             <Load />
-    //         </div>
-    //     )
-    // }
 
     async function handleSignIn(){
         const data = {
@@ -65,13 +41,8 @@ const Login = () => {
 
     return (
         <>
-            <button onClick={handleLogin} >
-                TESTAR LOGIN
-            </button>
-
             <div className="fundo">
                 <div className="content">
-                    {/* <form className="formlogin" autoComplete="off" > */}
                     <div className="formlogin" >
                         <div className="headerlogo">
                             <Logo />
@@ -104,10 +75,7 @@ const Login = () => {
                         >
                             ENTRAR
                         </button>
-
-                        <a href="/" className="forgotpassword" >ESQUECEU SUA SENHA? </a>
-
-                        {/* </form> */}
+                        <label className="forgotpassword" >ESQUECEU SUA SENHA? </label>
                     </div>
                     <div className="register">
                         <label className="label"> Ainda não tem conta? </label>
@@ -122,3 +90,4 @@ const Login = () => {
 };
 
 export default Login;
+
